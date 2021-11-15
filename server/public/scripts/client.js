@@ -84,6 +84,7 @@ function calculateEquation() {
         data: equationInput,
     }).then ((response) => {
         console.log('response', response)
+        renderHistory()
     }).catch ((error) => {
         console.log('error', error)
     })
